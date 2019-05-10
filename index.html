@@ -1,18 +1,175 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html> <!-- let the browser know this is an HTML file -->
+
+<html>      <!-- everything else is enclosed in html tags -->
+<head>      <!-- the head is for metadata prior to building the page -->
+
+    <!-- define the character set -->
     <meta charset='utf-8' />    
-    <title>Post-Maria School Closures</title>     
+
+    <!-- the title of the page which will show up in the browser bar -->
+    <title>Store</title>     
+
+    <!-- discourage the browser from caching the page -->    
     <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
     <meta http-equiv='Pragma' content='no-cache' />
     <meta http-equiv='Expires' content='0' />    
+
+    <!-- tells mobile devices how to scale the page -->    
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.css' rel='stylesheet' />     
+
+    <!-- stylesheet links -->
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />     
     <link href='style.css' rel='stylesheet' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.50.0/mapbox-gl.js'></script>
+
+    <!-- javascript links -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+
 </head>
-<body>
-    <div id='map'></div>
+<body>      <!-- visible structure of page begins here -->
+
+    <div id='map' class='map pad2'></div>
+    <!-- an element called 'map' -->
+    <div class= 'sidebar'>
+        <div class='heading'>
+            <h1> Local Communities & School Closures </h1>
+        </div>
+    <div id='listings' class='listings'>
+
+        <div class="item" id="listing-0">
+            <a href = "#" class="title"> Capitolio de Puerto Rico (03/19/18)</a> 
+            <img src="https://www.motherjones.com/wp-content/uploads/2018/03/teachers_master2k.jpg?resize=990,556"/><br/>
+            <div> "Rodriguez joined thousands of teachers who gathered at Luis Muñoz Rivera Park for a mile-long march to the island’s Capitol building, chanting, “Julia go home!” and “Where is Ricky? Ricky isn’t here, Ricky is selling what’s left of the country.” (They are referring to Rosselló, whom many refer to simply as “Ricky”). <a href="https://www.motherjones.com/politics/2018/03/puerto-rico-is-trying-to-overhaul-its-public-schools-and-teachers-are-furious/" style="color: #0000EE;"  target="_blank"> — <i> Puerto Rico Is Trying to Overhaul Its Public Schools and Teachers Are Furious </i> </a> </div> <br/>
+        </div>
+
+        <div class="item" id="listing-1">
+            <a href="#" class="title"> Escuela Manuel A. Barreto </a>
+            <blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">Esta es la escuela Manuel A Barreto, escuela receptora de 3 escuelas en Mayagüez. Claramente no está en condiciones para recibir a cientos de estudiantes. <br><br>Esto ocurre cuando la educación se ve como un NEGOCIO y no como un DERECHO.<a href="https://twitter.com/hashtag/Noalcierre?src=hash&amp;ref_src=twsrc%5Etfw">#Noalcierre</a> <a href="https://twitter.com/hashtag/noalascharter?src=hash&amp;ref_src=twsrc%5Etfw">#noalascharter</a><a href="https://twitter.com/hashtag/Kelehergohome?src=hash&amp;ref_src=twsrc%5Etfw">#Kelehergohome</a> <a href="https://t.co/gxtsabEXZ7">pic.twitter.com/gxtsabEXZ7</a></p>&mdash; Juventud Hostosiana (@JHostosiana) <a href="https://twitter.com/JHostosiana/status/1024350205599264775?ref_src=twsrc%5Etfw">July 31, 2018</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+          <div class="item" id="listing-15">
+            <a href="#" class="title">Luis Muñoz Rivera </a>
+            <div> We are tired of the abuse. Our hearts are broken. Not for ourselves, but for our children. They come here [to the occupation encampment], and they suffer, because they want to see their school reopened. They haven’t even had vacation because they have been here in the struggle with us.
+            <a href="https://socialistworker.org/2018/08/15/standing-against-the-privatization-storm" tyle="color: #0000EE;" target="_blank"> — <i> Standing Against The Privatization Storm </i> </a> </div>
+        </div>
+
+        <div class="item" id="listing-2">
+            <a href="#" class="title"> SU Galo Rosado </a>
+            <iframe src="https://www.youtube.com/embed/MtC9lxS9dhI"></iframe>
+        </div>
+    
+
+        <div class="item" id="listing-3">
+            <a href ="#" class="title">Old San Juan (08/15/18)</a>
+            <img src="https://caribbeanbusiness.com/wp-content/uploads/2018/08/Teachers-Federation-Facebook.jpg"/><br/>
+            <div> “We are responding to an attack on the most precious thing our country has, which is childhood and its hopes. They are the main victims of all this chaos, improvisation and pillaging in the privatization that looms over public education. We come out in defense of the mistreated teachers who are denied respect for their work." 
+            <a href= "https://caribbeanbusiness.com/puerto-rico-teachers-union-calls-for-aug-15-strike/" style="color: #0000EE;" target="_blank"> — <i> Puerto Rico Public Teachers Union Calls for Aug. 15 Strike </i> </a> </div> 
+        </div>
+
+        <div class="item" id="listing-4">
+            <a href="#" class="title">Escuela Rosa E. Molinari</a>
+            <iframe src="https://www.npr.org/player/embed/622361933/622361936" width="100%" height="250" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>
+        </div>
+
+        <div class="item" id="listing-5">
+            <a href="#" class="title">Paso Palmas</a>
+            <img src="https://cdn.vox-cdn.com/thumbor/bpW2I7pccGi9jykjUqBWHDAVM18=/0x0:2100x1402/920x0/filters:focal(0x0:2100x1402):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/11526567/0191.jpg"/><br>
+            <div>"Parental involvement has been an integral part of the school community. Many parents walk their children to school, spend time there during the day, and get involved in school activities. Many who graduated from the school later return to volunteer there.“The unity we had here, the organization we had here, the family environment, the community involved — it totally gets lost once they’re out of here,” said María Arriaga, a community member who volunteers at the school.
+            <a href="https://www.vox.com/policy-and-politics/2018/6/15/17455746/puerto-rico-hurricane-maria-schools-closing" style="color: #0000EE;" target="_blank"> — <i> About a quarter of Puerto Rico’s schools are shutting down. Here’s a look inside one. </i> </a> </div>
+        </div>
+
+        <div class="item" id="listing-6">
+            <a href="#" class="title">SU Matrullas</a>
+            <img src= "https://l0dl1j3lc42iebd82042pgl2-wpengine.netdna-ssl.com/wp-content/uploads/sites/2/2018/02/PR-school.jpg"/><br>
+            <div>“In the aftermath of hurricanes Irma and Maria, [Rosselló] needs to invest in public schools to support and stabilize kids’ learning, not abandon and privatize schools,” President Aida Diaz of the Puerto Rican teachers' union wrote in a statement early this month.
+             <a href="https://www.citylab.com/life/2018/02/why-puerto-rico-is-pushing-to-privatize-its-schools/554198/" style="color: #0000EE;" target="_blank"> — <i> Why Puerto Rico Is Pushing to Privatize Its Schools </i> </a> </div>
+         </div>
+
+         <div class="item" id="listing-7">
+            <a href="#" class="title">Escuela Clemente Ramírez</a>
+            <img src = "https://i1.wp.com/themilitant.com/wp-content/uploads/2018/06/052318a8.jpg?w=750&ssl=1" /><br>
+            <div>Students, parents and teachers protest May 3 against the closing of the Clemente Ramírez de Arellano school in Manatí, Puerto Rico. Many of the signs say, “Enough already.”
+            <a href="https://themilitant.com/2018/05/24/protests-against-school-closures-in-puerto-rico/" style="color: #0000EE;" target="_blank"> — <i> Protests against school closures in Puerto Rico </i> </a> </div>
+        </div>
+
+        <div class="item" id="listing-8">
+            <a href="#" class="title">Escuela Rosa Costa Valdivieso</a>
+            <img src="https://www.tampabay.com/storyimage/HI/20180814/ARTICLE/308149848/EP/1/1/EP-308149848.jpg&MaxW=1200&Q=66"/><br>
+            <div>"But while the school appeared relatively unscathed, Hurricane Maria has left deep scars in the town. Children grieve the loss of friends and family members who fled to the mainland, part of an exodus of 27,000 students in the months immediately following the storm. The suicide prevention hotline has seen an alarming spike in calls from desperate residents. And in the mountains surrounding the town, blue tarps still cover dozens of homes where the roofs have yet to be repaired."
+            <a href="https://www.tampabay.com/news/education/Kids-are-back-in-school-in-Puerto-Rico-But-Hurricane-Maria-s-effects-still-linger_170882206" style="color: #0000EE;" target="_blank"> — <i> Kids are back in school in Puerto Rico. But Hurricane Maria’s effects still linger </i> </a> </div>
+        </div>
+
+        <div class="item" id="listing-10">
+            <a href="#" class="title"> Escuela Intermedia John F. Kennedy </a>
+            <img src="https://static01.nyt.com/images/2018/06/03/us/03prschools-print4/merlin_137835027_ba660c7e-3c08-4f1b-aa77-4d245c975d8a-jumbo.jpg?quality=90&auto=webp"/><br>
+            <div> “I am suffering,” María Díaz, 65, said as she picked up her two granddaughters from John F. Kennedy Middle School in Caguas, which is scheduled to close. “I felt this school was a refuge.” “No one wants it to close,” one of her granddaughters, Avril Santos, 13, a seventh grader, said from the back seat of her grandmother’s S.U.V. “I have many friends, and there’s no bullying here.”  
+            <a href="https://www.nytimes.com/2018/06/01/us/puerto-rico-school-closings.html" tyle="color: #0000EE;" target="_blank"> — <i> Puerto Rico’s Schools Are in Tumult, and Not Just Because of Hurricane Maria </i> </a> </div>
+        </div>
+
+        <div class="item" id="listing-9">
+            <a href="#" class="title">Escuela Carlos Rivera Ufret</a>
+            <div> Months after Maria, the air conditioning no longer worked and mold was growing in the classrooms, according to a teacher at the school. A tarp covered the principal’s office, where the roof was still missing. 
+            <a href="https://www.tampabay.com/news/education/Kids-are-back-in-school-in-Puerto-Rico-But-Hurricane-Maria-s-effects-still-linger_170882206" style="color: #0000EE;" target="_blank"> — <i> Kids are back in school in Puerto Rico. But Hurricane Maria’s effects still linger </i> </a> </div>
+        </div>
+
+        <div class="item" id="listing-11">
+            <a href="#" class="title">Gaspar Vila Mayans</a>
+            <iframe src="https://www.npr.org/player/embed/574344568/577279706" width="100%" height="250" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe> 
+        </div>
+
+        <div class="item" id="listing-12">
+            <a href="#" class="title"> Escuela Jacinto Lopez Martinez </a>
+            <div> A modo de ejemplo, dijo que en la escuela Jacinto López en Dorado, tendrán que dividir los salones en dos para atender el exceso de matrícula de estudiantes quienes llegan de un par de escuelas que cerraron.
+            <a href="https://www.primerahora.com/noticias/puerto-rico/nota/sombrioyconfusoelnuevosemestre-1296199/" style="color: #0000EE;" target="_blank"> — <i> Sombrío y confuso el nuevo semestre </i></a></div>
+        </div>
+
+         <div class="item" id="listing-13">
+            <a href="#" class="title"> Escuela Ecológico de Dorado </a>
+            <blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">Escuela Ecológica de Dorado: sin sillas, sin aire acondicionado y ni siquiera abanicos. Hay hacinamiento. <a href="https://t.co/292cYw0R7Z">pic.twitter.com/292cYw0R7Z</a></p>&mdash; AMPR (@amprnet) <a href="https://twitter.com/amprnet/status/1029064514464038912?ref_src=twsrc%5Etfw">August 13, 2018</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div class="item" id="listing-14">
+            <a href="#" class="title">Escuela Lorencita Ramírez </a>
+            <img src="https://bloximages.newyork1.vip.townnews.com/elvocero.com/content/tncms/assets/v3/editorial/b/0e/b0eff264-37fa-11e8-9af6-d743b466c3f5/5ac4b5f685c76.image.jpg?resize=750%2C500" /><br>
+            <div>Según los protestantes, "nadie del DE fue a inspeccionarlas (las escuelas) y no existe carta oficial notificando a los padres el motivo del cierre, ya que de haberse seguido el debido proceso, los planteles no cerrarían”.
+            <a href="https://www.elvocero.com/educacion/repudian-cierre-de-escuelas-en-toa-baja/article_e26c6ee0-4195-11e8-a86b-bfa535d9dd9c.html" style="color: #0000EE;" target="_blank"> — <i> Repudian cierre de escuelas en Toa Baja </i> </a> </div>
+        </div>
+
+        <div class="item" id="listing-15">
+            <a href="#" class="title">Escuela Elemental Isaac del Rosario </a>
+            <img src = "https://media2.s-nbcnews.com/j/newscms/2018_32/2528226/180812-open-house-school-puerto-rico-215a-na_6b91e28049a80485931f9546016dcf9f.fit-560w.JPEG" /> <br>
+            <div> “Mami, look at the basketball court! They painted it!” said a little boy as soon as he walked into the school towards a first-grade classroom alongside his mother, while passing by a handful of classrooms that were still being painted and repaired on Friday.
+            <a href="https://www.nbcnews.com/storyline/puerto-rico-crisis/puerto-rico-new-school-year-begins-after-hurricane-maria-big-n899866" style="color: #0000EE;" target="_blank"> — <i> In Puerto Rico, new school year begins after Hurricane Maria, big changes to education system </i></a></div>
+        </div>
+
+        <div class="item" id="listing-16">
+             <a href="#" class="title">Escuela de Segunda Unidad Josefina Sitiriche </a> 
+             <div> When the Hato Nuevo school was shut down this summer, Barez's children were relocated to S.U. Josefina Sitiriche in the nearby Celadas community, If she walks her kids to school, like she used to, it would take her 43 minutes to get there; driving adds about six more minutes. The family adjusted their commute. <br>
+
+             “My husband starts work at 7 in the morning. That means I have to wake my kids earlier, get them ready earlier, so I can leave the house in time to drop my husband at his job and then take the kids to school,” “Right now, I don’t have a lot of choices, but I’m considering homeschooling my kids if necessary,” Barez said.
+             <a href="https://www.nbcnews.com/storyline/puerto-rico-crisis/puerto-rico-new-school-year-begins-after-hurricane-maria-big-n899866"style="color: #0000EE;" target="_blank"> — <i> In Puerto Rico, new school year begins after Hurricane Maria, big changes to education system </i></a></div>
+         </div>
+
+         <div class="item" id="listing-17">
+             <a href="#" class="title">Escuela Parcelas Maria </a> 
+             <iframe src="https://www.youtube.com/embed/xmgVSTlpRzc" ></iframe>
+             <div>Parents of special needs children in Puerto Rico feel blindsided after school closures and limited access to special needs education a year after Hurricane Maria.
+         </div>>
+
+
+
+
+        
+
+
+
+    </div>
+</div>
+
+    <!-- an element called 'info' -->
+    <div id='info'></div>
+
+    <!-- load additional javascript -->
     <script src='map.js'></script>    
+
 </body>
 </html>

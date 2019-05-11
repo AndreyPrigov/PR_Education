@@ -14,7 +14,7 @@ if (!('remove' in Element.prototype)) {
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
+    style: 'mapbox://styles/mapbox/streets-v11',
     center: [-66.403,18.142],
     zoom: 8.22,
     minZoom: 7.75

@@ -312,19 +312,13 @@ var event = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -77.043959498405,
-          38.903883387232
+          -66.103, 
+         18.466780
         ]
       },
       "properties": {
-        "phoneFormatted": "(202) 331-3355",
-        "phone": "2023313355",
-        "address": "1901 L St. NW",
-        "city": "Washington DC",
-        "country": "United States",
-        "crossStreet": "at 19th St",
-        "postalCode": "20036",
-        "state": "D.C."
+        "places": "Capitolio de Puerto Rico",
+        "description": "Teachers and community members protest against the decision to shutter hundreds of schools, likening each closure to the murder and destruction of the community.",
       }
     },
     {
@@ -332,19 +326,13 @@ var event = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -77.043959498405,
-          38.903883387232
+          -66.077342,
+          18.3398962
         ]
       },
       "properties": {
-        "phoneFormatted": "(202) 331-3355",
-        "phone": "2023313355",
-        "address": "1901 L St. NW",
-        "city": "Washington DC",
-        "country": "United States",
-        "crossStreet": "at 19th St",
-        "postalCode": "20036",
-        "state": "D.C."
+        "places": "Escuela Ines Maria Mendoza",
+        "description": "School closures and other destabilizing social consequences of post-Maria recovery have upeneded the support systems on which children relied on, exacerbating the way they manage their trauma.",
       }
     },
     {
@@ -352,19 +340,13 @@ var event = {
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -77.043959498405,
-          38.903883387232
+          -65.8681582,
+          18.3838049
         ]
       },
       "properties": {
-        "phoneFormatted": "(202) 331-3355",
-        "phone": "2023313355",
-        "address": "1901 L St. NW",
-        "city": "Washington DC",
-        "country": "United States",
-        "crossStreet": "at 19th St",
-        "postalCode": "20036",
-        "state": "D.C."
+        "places": "Escuela Guillermina Rosado De Ayala",
+        "description": "As teachers and parents struggle to provide critial social scaffolding for students, officials worry that if they don't get the support they need, the consequences could be severe."
       }
     },
   ]
